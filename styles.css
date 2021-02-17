@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+}
+
+@font-face {
+  font-family: Jufatti;
+  src: url('fonts/jufatti-font/Jufatti-MVZ9v.otf');
+  /* Downloaded from fontspace.com*/
+}
+
+@font-face {
+  font-family: jacob-and-sons;
+  src: url('fonts/jacob-and-son-font/JacobAndSon-gxl06.otf');
+}
+
+/* @font-face {
+  font-family: saker-sans;
+  src: url('fonts/saker-sans-font/SakerSansBlackPersonalUse-aorg.ttf');
+} */
+
+body {
+  background-color: #f9f7f7;
+}
+
+nav {
+  background-color: #112d4e;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 3px solid #3f72af;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+} */
+
+/* .sticky + header {
+  padding-top: 102px;
+} */
+
+nav ul {
+  /* border: 1px solid black; */
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active {
+  font-family: sans-serif;
+  font-size: 1.4vh;
+  color: whitesmoke;
+  padding: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #081d35;
+  color: #efefef;
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#logoContainer {
+  padding: 5px;
+}
+
+#logoContainer h1 {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-family: jacob-and-sons;
+  text-align: center;
+  padding: 5px;
+}
+
+#logoContainer h1 a,
+#logoContainer h1 a:visited,
+#logoContainer h1 a:active {
+  color: whitesmoke;
+}
+
+#logoContainer h1 img {
+  width: 7%;
+  border-radius: 8px 0px 8px 0px;
+  border: 2px solid #3f72af;
+  vertical-align: baseline;
+}
+
+#logoContainer h1 span {
+  font-size: 1.4vh;
+  display: flex;
+  flex-direction: column;
+  color: #3f72af;
+}
+
+main section,
+footer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* scroll-snap-align: center; */
+}
+
+main section h1,
+footer h1 {
+  font-family: jacob-and-sons;
+  padding: 5px;
+}
+
+main #home {
+  background-image: url('https://images.unsplash.com/photo-1541615008677-0d46e9f9dcb6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#textContainer {
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+#textContainer span {
+  color: black;
+  font-family: Arial Narrow;
+}
+
+#textContainer:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+#textContainer:hover span {
+  color: firebrick;
+}
+
+main #about,
+footer {
+  background-color: #dbe2ef;
+}
+
+#about p {
+  font-family: Arial Narrow;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#skillsContainer {
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+
+#skillsContainer h3,
+#skillsContainer div h4 {
+  font-family: Arial Narrow;
+  padding: 5px;
+  width: 100%;
+}
+
+#skillsContainer div {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about #skillsContainer div span p {
+  font-family: Arial Narrow;
+  margin: 0;
+}
+
+#portfolio .projectContainer {
+  margin-top: 15px;
+}
+
+#portfolio .projectContainer h4 {
+  font-family: Arial Narrow;
+  padding: 5px;
+}
+
+#portfolio .projectContainer div {
+  width: 80%;
+  margin: auto;
+}
+
+#portfolio .projectContainer div img {
+  width: 100%;
+}
+
+#portfolio .projectContainer .displayText {
+  font-family: Arial Narrow;
+}
+
+#contactDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactDetails label {
+  font-family: Arial Narrow;
+  font-weight: bold;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+#contactDetails span {
+  font-family: Arial Narrow;
+  padding: 2px;
+}
+
+#contactDetails span a img {
+  padding: 2px;
+  width: 20px;
+}
+
+#contactDetails span a img:hover {
+  border: 1px solid #3f72af;
+}
+
+#contact p {
+  margin-top: 20px;
+  padding: 5px;
+  font-family: Arial Narrow;
+  font-size: 1.2vh;
+}
+#contact p a,
+#contact p a:visited {
+  color: black;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #logoContainer h1 img {
+    width: 8%;
+    border-radius: 20px 0px 20px 0px;
+    border: 2px solid #3f72af;
+  }
+
+  #logoContainer h1 {
+    font-size: 4.5vh;
+  }
+  #logoContainer h1 span {
+    font-size: 1.8vh;
+    display: flex;
+    flex-direction: column;
+    color: #3f72af;
+  }
+
+  #textContainer {
+    font-size: 3vh;
+  }
+
+  #skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #skillsContainer h3 {
+    width: 100%;
+  }
+
+  #skillsContainer div {
+    /* display: block; */
+    width: 30%;
+  }
+
+  #portfolio {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+  }
+
+  #portfolio h1 {
+    width: 100%;
+  }
+
+  #portfolio .projectContainer {
+    width: 45%;
+    /* border: 1px solid black; */
+  }
+
+  #portfolio .projectContainer div img {
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  #portfolio .projectContainer .textOverlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #portfolio .projectContainer:hover img {
+    opacity: 0.3;
+  }
+  #portfolio .projectContainer:hover .textOverlay {
+    opacity: 1;
+  }
+
+  #portfolio .projectContainer h4 {
+    font-size: 1.8vh;
+  }
+
+  #portfolio .projectContainer .textOverlay .displayText {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  nav #logoContainer {
+    /* border: 1px solid black; */
+    width: 30%;
+  }
+
+  nav #logoContainer h1 {
+    font-size: 4.5vh;
+  }
+
+  nav #logoContainer h1 img {
+    width: 9.2%;
+    border-radius: 15px 0px 15px 0px;
+  }
+
+  nav #logoContainer h1 span {
+    font-size: 2.5vh;
+  }
+
+  nav ul {
+    width: 40%;
+    /* border: 1px solid black; */
+    align-content: center;
+  }
+
+  nav ul li a,
+  nav ul li a:visited,
+  nav ul li a:active {
+    font-size: 2vh;
+  }
+
+  #textContainer {
+    font-size: 5vh;
+  }
+
+  main section h1,
+  footer h1 {
+    font-size: 4.5vh;
+  }
+
+  #skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #skillsContainer h3 {
+    width: 100%;
+    font-size: 3vh;
+  }
+
+  #skillsContainer div {
+    width: 30%;
+  }
+
+  #portfolio {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+  }
+
+  #portfolio h1 {
+    width: 100%;
+  }
+
+  #portfolio .projectContainer {
+    width: 45%;
+    /* border: 1px solid black; */
+  }
+
+  #portfolio .projectContainer h4 {
+    font-size: 1.8vh;
+  }
+
+  #portfolio .projectContainer div img {
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  #portfolio .projectContainer .textOverlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #portfolio .projectContainer:hover img {
+    opacity: 0.3;
+  }
+  #portfolio .projectContainer:hover .textOverlay {
+    opacity: 1;
+  }
+
+  #portfolio .projectContainer h4 {
+    font-size: 1.8vh;
+  }
+
+  #portfolio .projectContainer .textOverlay .displayText {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  #contactDetails label {
+    font-size: 2.5vh;
+  }
+  #contactDetails span {
+    font-size: 2vh;
+  }
+  #contactDetails span a img {
+    width: 28px;
+  }
+
+  #contact p {
+    font-size: 1.8vh;
+  }
+}
