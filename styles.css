@@ -38,15 +38,6 @@ nav {
   z-index: 1;
 }
 
-/* .sticky {
-  position: fixed;
-  top: 0;
-} */
-
-/* .sticky + header {
-  padding-top: 102px;
-} */
-
 nav ul {
   /* border: 1px solid black; */
   padding: 5px;
@@ -184,6 +175,7 @@ footer {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 5px 5px 8px #888888;
 }
 
 #about #skillsContainer div span p {
@@ -284,6 +276,7 @@ footer {
   #skillsContainer div {
     /* display: block; */
     width: 30%;
+    box-shadow: 5px 10px 8px #888888;
   }
 
   #portfolio {
@@ -301,8 +294,10 @@ footer {
   }
 
   #portfolio .projectContainer {
-    width: 45%;
+    width: 30%;
     /* border: 1px solid black; */
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 5px;
   }
 
   #portfolio .projectContainer div img {
@@ -334,7 +329,7 @@ footer {
   }
 
   #portfolio .projectContainer .textOverlay .displayText {
-    background-color: #4caf50;
+    background-color: rgb(76, 175, 80, 0.8);
     color: white;
     font-size: 16px;
     padding: 16px 32px;
@@ -401,6 +396,7 @@ footer {
 
   #skillsContainer div {
     width: 30%;
+    box-shadow: 5px 10px 8px #888888;
   }
 
   #portfolio {
@@ -418,8 +414,9 @@ footer {
   }
 
   #portfolio .projectContainer {
-    width: 45%;
+    width: 30%;
     /* border: 1px solid black; */
+    box-shadow: 5px 10px 8px #888888;
   }
 
   #portfolio .projectContainer h4 {
@@ -455,7 +452,7 @@ footer {
   }
 
   #portfolio .projectContainer .textOverlay .displayText {
-    background-color: #4caf50;
+    background-color: rgb(76, 175, 80, 0.8);
     color: white;
     font-size: 16px;
     padding: 16px 32px;
