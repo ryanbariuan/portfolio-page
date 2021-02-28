@@ -105,12 +105,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 10px;
   /* scroll-snap-align: center; */
 }
 
 main section h1,
 footer h1 {
   font-family: jacob-and-sons;
+  font-size: 3.2vh;
   padding: 5px;
 }
 
@@ -160,6 +162,7 @@ footer {
 
 #about p {
   font-family: Arial Narrow;
+  font-size: 12px;
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -172,6 +175,7 @@ footer {
 #skillsContainer h3,
 #skillsContainer div h4 {
   font-family: Arial Narrow;
+  font-size: 2vh;
   padding: 5px;
   width: 100%;
 }
@@ -192,6 +196,7 @@ footer {
 
 #about #skillsContainer div span p {
   font-family: Arial Narrow;
+  font-size: 1.6vh;
   margin: 0;
 }
 
@@ -225,6 +230,7 @@ footer {
 
 #portfolio .projectContainer h4 {
   font-family: Arial Narrow;
+  font-size: 2vh;
   padding: 5px;
 }
 
@@ -251,6 +257,7 @@ footer {
 
 #contactDetails label {
   font-family: Arial Narrow;
+  font-size: 2vh;
   font-weight: bold;
   padding: 2px;
   margin-top: 15px;
@@ -258,6 +265,7 @@ footer {
 
 #contactDetails span {
   font-family: Arial Narrow;
+  font-size: 2vh;
   padding: 2px;
 }
 
@@ -304,6 +312,10 @@ footer {
 
   #textContainer {
     font-size: 3vh;
+  }
+
+  #about p {
+    font-size: 2vh;
   }
 
   #skillsContainer {
@@ -434,6 +446,10 @@ footer {
   main section h1,
   footer h1 {
     font-size: 4.5vh;
+  }
+
+  #about p {
+    font-size: 2vh;
   }
 
   #skillsContainer {
