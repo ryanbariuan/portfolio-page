@@ -100,6 +100,7 @@ main section,
 footer {
   width: 100%;
   height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +138,18 @@ main #home {
   border-radius: 5px;
 }
 
+#textContainer span a,
+#textContainer span a:active,
+#textContainer span a:visited {
+  color: black;
+}
+
 #textContainer:hover span {
+  color: firebrick;
+}
+#textContainer:hover span a,
+#textContainer:hover span a:active,
+#textContainer:hover span a:visited {
   color: firebrick;
 }
 
@@ -183,8 +195,22 @@ footer {
   margin: 0;
 }
 
+#portfolio #portfolioWrap {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#portfolio h1 {
+  width: 100%;
+}
+
 #portfolio .projectContainer {
   margin-top: 15px;
+  /* border: 1px solid black; */
+  width: 45%;
 }
 
 #portfolio .projectContainer h4 {
@@ -195,14 +221,17 @@ footer {
 #portfolio .projectContainer div {
   width: 80%;
   margin: auto;
+  /* border: 1px solid black; */
 }
 
 #portfolio .projectContainer div img {
+  /* width: 50%; */
   width: 100%;
 }
 
 #portfolio .projectContainer .displayText {
   font-family: Arial Narrow;
+  font-size: 1.6vh;
 }
 
 #contactDetails {
@@ -214,7 +243,7 @@ footer {
   font-family: Arial Narrow;
   font-weight: bold;
   padding: 2px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 #contactDetails span {
@@ -235,7 +264,7 @@ footer {
   margin-top: 20px;
   padding: 5px;
   font-family: Arial Narrow;
-  font-size: 1.2vh;
+  font-size: 1.4vh;
 }
 #contact p a,
 #contact p a:visited {
@@ -243,6 +272,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  * {
+    scroll-behavior: smooth;
+  }
+
   #logoContainer h1 img {
     width: 8%;
     border-radius: 20px 0px 20px 0px;
@@ -294,13 +327,19 @@ footer {
   }
 
   #portfolio .projectContainer {
+    margin-top: 15px;
     width: 30%;
     /* border: 1px solid black; */
     box-shadow: 5px 10px 8px #888888;
     margin-bottom: 5px;
   }
 
+  /* #portfolio .projectContainer div {
+    border: 1px solid black;
+  } */
+
   #portfolio .projectContainer div img {
+    width: 100%;
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
@@ -337,6 +376,10 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  * {
+    scroll-behavior: smooth;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -414,6 +457,7 @@ footer {
   }
 
   #portfolio .projectContainer {
+    margin-top: 15px;
     width: 30%;
     /* border: 1px solid black; */
     box-shadow: 5px 10px 8px #888888;
@@ -424,6 +468,7 @@ footer {
   }
 
   #portfolio .projectContainer div img {
+    width: 100%;
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
