@@ -16,6 +16,10 @@
   display: none;
 }
 
+/* #portfolioMobile .carousel .carouselItems {
+  border: 1px solid blue;
+} */
+
 #portfolioMobile .carousel .carouselItems_visible {
   display: block;
   animation-name: showTransition;

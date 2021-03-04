@@ -1,5 +1,9 @@
 let slidePosition = 0;
 
+// -----------------------  
+//for mobile
+// -----------------------  
+
 let contentSlides = document.getElementsByClassName('carouselItems');
 let totalSlides = contentSlides.length;
 
@@ -46,4 +50,53 @@ function moveToPrevSlide(){
     slidePosition--;
   }
   updateSlidePosition();
+}
+
+// -----------------------  
+// for tablet and desktop
+// -----------------------  
+let portfolioWrapSlides = document.getElementsByClassName('portfolioWrap');
+let totalWrapSlides = portfolioWrapSlides.length;
+
+let btnNextSlide = document.querySelector("#btnNextSlide");
+let btnPrevSlide = document.querySelector("#btnPrevSlide");
+
+btnNextSlide.addEventListener("click", function(){
+  moveToNextSlideForWideScreen();
+});
+
+btnPrevSlide.addEventListener("click", function(){
+  moveToPrevSlideForWideScreen();
+});
+
+function updateSlidePositionForWideScreen(){
+  for(let slide of portfolioWrapSlides){
+    slide.classList.remove('portfolioWrap_visible');
+    slide.classList.add('portfolioWrap_hidden');
+  }
+  portfolioWrapSlides[slidePosition].classList.add('portfolioWrap_visible');
+}
+
+function moveToNextSlideForWideScreen(){
+  if(slidePosition == totalWrapSlides -1)
+  {
+    slidePosition = 0;
+  }
+  else
+  {
+    slidePosition++;
+  }
+  updateSlidePositionForWideScreen();
+}
+
+function moveToPrevSlideForWideScreen(){
+  if(slidePosition == 0)
+  {
+    slidePosition = totalWrapSlides -1;
+  }
+  else
+  {
+    slidePosition--;
+  }
+  updateSlidePositionForWideScreen();
 }

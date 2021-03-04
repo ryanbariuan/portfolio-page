@@ -220,12 +220,8 @@ footer {
   display: none;
 }
 
-#portfolio #portfolioWrap {
-  /* border: 1px solid black; */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#portfolio .sliderActions {
+  display: none;
 }
 
 #portfolio .projectContainer {
@@ -356,6 +352,63 @@ footer {
 
   #portfolio #portfolioSlider {
     display: block;
+
+    /* border: 1px solid pink; */
+    max-width: 800px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  #portfolioSlider .portfolioWrap,
+  #portfolioSlider .portfolioWrap_hidden {
+    display: none;
+  }
+
+  #portfolioSlider .portfolioWrap_visible {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    animation-name: showTransition;
+    animation-duration: 1s;
+  }
+
+  @keyframes showTransition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transition: opacity ease;
+    }
+  }
+
+  #portfolio .sliderActions {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+  }
+
+  #portfolio .sliderActions button {
+    font-family: Arial Narrow;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: #6890f0;
+    border: 2px solid #53648d;
+    border-radius: 15px;
+    width: 15%;
+    cursor: pointer;
+  }
+
+  #portfolio .sliderActions button:hover {
+    background-color: #2a61e0;
+    border: 2px solid #53648d;
   }
 
   #portfolio h1 {
@@ -369,10 +422,6 @@ footer {
     box-shadow: 5px 10px 8px #888888;
     margin-bottom: 5px;
   }
-
-  /* #portfolio .projectContainer div {
-    border: 1px solid black;
-  } */
 
   #portfolio .projectContainer div img {
     width: 100%;
@@ -498,6 +547,63 @@ footer {
 
   #portfolio #portfolioSlider {
     display: block;
+
+    /* border: 1px solid pink; */
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  #portfolioSlider .portfolioWrap,
+  #portfolioSlider .portfolioWrap_hidden {
+    display: none;
+  }
+
+  #portfolioSlider .portfolioWrap_visible {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    animation-name: showTransition;
+    animation-duration: 1s;
+  }
+
+  @keyframes showTransition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transition: opacity ease;
+    }
+  }
+
+  #portfolio .sliderActions {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+  }
+
+  #portfolio .sliderActions button {
+    font-family: Arial Narrow;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: #6890f0;
+    border: 2px solid #53648d;
+    border-radius: 15px;
+    width: 15%;
+    cursor: pointer;
+  }
+
+  #portfolio .sliderActions button:hover {
+    background-color: #2a61e0;
+    border: 2px solid #53648d;
   }
 
   #portfolio h1 {
