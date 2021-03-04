@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ryan Bariuan | Full Stack Developer</title>
   <link rel="stylesheet" href = "styles.css">
+  <link rel="stylesheet" href = "styleForMobile.css">
   <link rel="icon" href="assets/portfolioLogo.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -75,71 +76,227 @@
     </section>
     <section id = "portfolio">
       <h1><span>---</span> My Projects <span>---</span></h1>
-      <div id="portfolioWrap">
-        <div class = "projectContainer">
-          <h4>LuntiCnS Static Website</h4>
-          <div>
+
+      <!-- For Mobile -->
+
+      <div id = "portfolioMobile">
+        <div class = "carousel">
+          <div class = "carouselItems carouselItems_visible">
+            <h4>LuntiCnS Static Website</h4>
             <a href = "https://ryanbariuan.github.io/LuntiCnS/">
               <img 
                 alt = "https://ryanbariuan.github.io/LuntiCnS/"
                 src = "assets/luntianCnS-Static-Web.png"
               >
             </a>
-            <div class = "textOverlay">
-              <div class = displayText>
-                Sample static website template, HTML / CSS / Responsive.
-              </div>
-            </div>
+            <p>
+              Sample static website template, HTML / CSS / Responsive.
+            </p>
           </div>
-        </div>
-        <div class = "projectContainer">
-          <h4>Who's That Pokemon Game</h4>
-          <div>
+          <div class = "carouselItems">
+            <h4>Who's That Pokemon Game</h4>
             <a href = "https://ryanbariuan.github.io/whosDatPokemonGame/">
               <img 
                 alt = "https://ryanbariuan.github.io/whosDatPokemonGame/"
                 src = "assets/whosThatPokemonJSGame.png"
               >
             </a>
-            <div class = "textOverlay">
-              <div class = displayText>
-                Sample Javascript game, HTML / CSS / JS / Responsive.
-              </div>
-            </div>
+            <p>
+              Sample Javascript game, HTML / CSS / JS / Responsive.
+            </p>
           </div>
-        </div>
-        <div class = "projectContainer">
-          <h4>Game Backlog Tracker</h4>
-          <div>
+          <div class = "carouselItems">
+            <h4>Game Backlog Tracker</h4>
             <a href = "#">
-              <img 
+              <img
+                src = "assets/gameBacklogTracker.png" 
                 alt = "Under Construction"
               >
             </a>
-            <div class = "textOverlay">
-              <div class = displayText>
-                MERN Stack / Under Construction
-              </div>
-            </div>
+            <p>
+              MERN Stack / Under Construction
+            </p>
           </div>
-        </div>
-        <div class = "projectContainer">
-          <h4>JS Digital Clock</h4>
-          <div>
+          <div class = "carouselItems">
+            <h4>JS Digital Clock</h4>
             <a href = "https://ryanbariuan.github.io/js-digital-clock/">
               <img 
                 alt = "https://ryanbariuan.github.io/js-digital-clock/"
                 src = "assets/jsDigitalClock.png"
               >
             </a>
-            <div class = "textOverlay">
-              <div class = displayText>
-                Sample Javascript Digital Clock
+            <p>
+              Sample Javascript Digital Clock
+            </p>
+          </div>
+          <div class = "carouselItems">
+            <h4>To Do List App</h4>
+            <a href = "https://rbariuan-front-mern-todoapp-01.herokuapp.com/">
+              <img 
+                alt = "https://rbariuan-front-mern-todoapp-01.herokuapp.com/"
+                src = "assets/todoApp.png"
+              >
+            </a>
+            <p>
+              Sample MERN Stack
+            </p>
+          </div>
+          <div class="carouselItems">
+            <h4>Pokedex Route Typing</h4>
+            <a href = "https://rbariuan-react-pokedexapp.herokuapp.com">
+              <img 
+                alt = "https://rbariuan-react-pokedexapp.herokuapp.com"
+                src = "assets/pokedexTyping.png"
+              >
+            </a>
+            <p>
+              Sample React Redux Routing
+            </p>
+          </div>
+          <div class = "carouselItems">
+            <h4>Resto App</h4>
+            <a href = "https://rbariuan-react-restoapp.herokuapp.com">
+              <img 
+                alt = "https://rbariuan-react-restoapp.herokuapp.com"
+                src = "assets/restoapp.png"
+              >
+            </a>
+            <p>
+              Sample React Application
+            </p>
+          </div>
+          <div class = "carouselActions">
+            <button id = "btnPrev">Previous</button>
+            <button id = "btnNext">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- For larger screens-->
+
+      <div id="portfolioSlider">
+         <div id="portfolioWrap">
+          <div class = "projectContainer">
+            <h4>LuntiCnS Static Website</h4>
+            <div>
+              <a href = "https://ryanbariuan.github.io/LuntiCnS/">
+                <img 
+                  alt = "https://ryanbariuan.github.io/LuntiCnS/"
+                  src = "assets/luntianCnS-Static-Web.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample static website template, HTML / CSS / Responsive.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "projectContainer">
+            <h4>Who's That Pokemon Game</h4>
+            <div>
+              <a href = "https://ryanbariuan.github.io/whosDatPokemonGame/">
+                <img 
+                  alt = "https://ryanbariuan.github.io/whosDatPokemonGame/"
+                  src = "assets/whosThatPokemonJSGame.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample Javascript game, HTML / CSS / JS / Responsive.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "projectContainer">
+            <h4>Game Backlog Tracker</h4>
+            <div>
+              <a href = "#">
+                <img
+                  src = "assets/gameBacklogTracker.png" 
+                  alt = "Under Construction"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  MERN Stack / Under Construction
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id = "portfolioWrap">
+          <div class = "projectContainer">
+            <h4>JS Digital Clock</h4>
+            <div>
+              <a href = "https://ryanbariuan.github.io/js-digital-clock/">
+                <img 
+                  alt = "https://ryanbariuan.github.io/js-digital-clock/"
+                  src = "assets/jsDigitalClock.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample Javascript Digital Clock
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "projectContainer">
+            <h4>To Do List App</h4>
+            <div>
+              <a href = "https://rbariuan-front-mern-todoapp-01.herokuapp.com/">
+                <img 
+                  alt = "https://rbariuan-front-mern-todoapp-01.herokuapp.com/"
+                  src = "assets/todoApp.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample MERN Stack
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "projectContainer">
+            <h4>Pokedex Route Typing</h4>
+            <div>
+              <a href = "https://rbariuan-react-pokedexapp.herokuapp.com">
+                <img 
+                  alt = "https://rbariuan-react-pokedexapp.herokuapp.com"
+                  src = "assets/pokedexTyping.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample React Redux Routing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id = "portfolioWrap">
+          <div class = "projectContainer">
+            <h4>Resto App</h4>
+            <div>
+              <a href = "https://rbariuan-react-restoapp.herokuapp.com">
+                <img 
+                  alt = "https://rbariuan-react-restoapp.herokuapp.com"
+                  src = "assets/restoapp.png"
+                >
+              </a>
+              <div class = "textOverlay">
+                <div class = displayText>
+                  Sample React Application
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
   </main>
   <footer id = "contact">
@@ -163,5 +320,6 @@
     </div>
 
   </footer>
+  <script src = "script.js"></script>
 </body>
 </html>

@@ -113,7 +113,7 @@ main section h1,
 footer h1 {
   font-family: jacob-and-sons;
   font-size: 3.2vh;
-  padding: 5px;
+  /* border: 1px solid black; */
 }
 
 main #home {
@@ -162,9 +162,8 @@ footer {
 
 #about p {
   font-family: Arial Narrow;
-  font-size: 12px;
+  font-size: 10px;
   padding: 5px;
-  margin-bottom: 5px;
 }
 
 #skillsContainer {
@@ -210,6 +209,17 @@ footer {
   text-align: center;
 }
 
+#portfolio h1 {
+  width: 100%;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+#portfolio #portfolioSlider {
+  /* border: 1px solid blue; */
+  display: none;
+}
+
 #portfolio #portfolioWrap {
   /* border: 1px solid black; */
   display: flex;
@@ -218,14 +228,10 @@ footer {
   justify-content: space-around;
 }
 
-#portfolio h1 {
-  width: 100%;
-}
-
 #portfolio .projectContainer {
   margin-top: 15px;
   /* border: 1px solid black; */
-  width: 45%;
+  width: 100%;
 }
 
 #portfolio .projectContainer h4 {
@@ -342,6 +348,14 @@ footer {
     justify-content: space-evenly;
     align-content: center;
     position: relative;
+  }
+
+  #portfolioMobile {
+    display: none;
+  }
+
+  #portfolio #portfolioSlider {
+    display: block;
   }
 
   #portfolio h1 {
@@ -476,6 +490,14 @@ footer {
     justify-content: space-evenly;
     align-content: center;
     position: relative;
+  }
+
+  #portfolioMobile {
+    display: none;
+  }
+
+  #portfolio #portfolioSlider {
+    display: block;
   }
 
   #portfolio h1 {
