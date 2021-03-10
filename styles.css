@@ -19,11 +19,6 @@
   src: url('fonts/jacob-and-son-font/JacobAndSon-gxl06.otf');
 }
 
-/* @font-face {
-  font-family: saker-sans;
-  src: url('fonts/saker-sans-font/SakerSansBlackPersonalUse-aorg.ttf');
-} */
-
 body {
   background-color: #f9f7f7;
 }
