@@ -421,6 +421,7 @@ footer {
     /* border: 1px solid black; */
     box-shadow: 5px 10px 8px #888888;
     margin-bottom: 5px;
+    position: relative;
   }
 
   #portfolio .projectContainer div img {
@@ -434,10 +435,10 @@ footer {
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 15%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
     text-align: center;
   }
 
@@ -455,8 +456,9 @@ footer {
   #portfolio .projectContainer .textOverlay .displayText {
     background-color: rgb(76, 175, 80, 0.8);
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px 32px;
+    width: 100%;
   }
 }
 
@@ -615,6 +617,7 @@ footer {
     width: 30%;
     /* border: 1px solid black; */
     box-shadow: 5px 10px 8px #888888;
+    position: relative;
   }
 
   #portfolio .projectContainer h4 {
@@ -632,10 +635,10 @@ footer {
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15%;
+    /* left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
     text-align: center;
   }
 
@@ -655,6 +658,7 @@ footer {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    width: 100%;
   }
 
   #contactDetails label {
