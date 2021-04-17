@@ -266,14 +266,23 @@ footer {
   padding: 2px;
 }
 
-#contactDetails span a img {
+#contactDetails span a {
+  font-size: 3vh;
+  color: black;
+}
+
+#contactDetails span a:hover {
+  color: #3f72af;
+}
+
+/* #contactDetails span a img {
   padding: 2px;
   width: 20px;
 }
 
 #contactDetails span a img:hover {
   border: 1px solid #3f72af;
-}
+} */
 
 #contact p {
   margin-top: 20px;
